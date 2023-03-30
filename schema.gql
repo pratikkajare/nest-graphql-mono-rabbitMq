@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateOrderInput {
+  name: String!
+  phoneNumber: String!
+  price: Int!
+}
+
+type Mutation {
+  createOrder(request: CreateOrderInput!): OrderEntity!
+}
+
+type OrderEntity {
+  _id: ID!
+  name: String!
+  phoneNumber: String!
+  price: Float!
+}
+
+type Query {
+  orders: [OrderEntity!]!
+}
